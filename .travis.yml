@@ -17,7 +17,7 @@ gemfile:
 cache:
   directories: vendor/bundle
 
-# masterとdevelopブランチのみ実行対象に入れる
+# master develop 
 branches:
   only: 
     - master
