@@ -14,6 +14,15 @@ env:
 gemfile:
 - Gemfile
 
+cache:
+  directories: vendor/bundle
+
+# masterとdevelopブランチのみ実行対象に入れる
+branches:
+  only: 
+    - master
+    - develop
+
 before_install:
 - gem update --system
 - gem --version
